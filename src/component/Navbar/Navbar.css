@@ -1,0 +1,84 @@
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  text-decoration: none;
+}
+
+.app-store-links {
+  display: flex;
+  align-items: center;
+}
+
+.app-store-link {
+  margin-right: 10px;
+}
+
+.app-store-link img {
+  width: 110px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  margin-right: 10px;
+}
+
+.logout-button,
+.login-button {
+  background-color: #1e88e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover,
+.login-button:hover {
+  background-color:#0d47a1;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .app-store-links,
+  .navbar-links {
+    margin-top: 10px;
+  }
+
+  .app-store-link {
+    margin-right: 0;
+  }
+
+  .navbar-brand,
+  .user-name,
+  .login-button,
+  .logout-button {
+    margin: 10px 0;
+  }
+
+  .app-store-links {
+    margin-left: auto; /* Align app store links to the right on smaller screens */
+  }
+}

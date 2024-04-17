@@ -1,0 +1,52 @@
+.filter-courses {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+  flex: 1; /* Each filter group takes up equal space */
+  margin-bottom: 10px; /* Add some margin between filter groups */
+}
+
+.filter-label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.filter-select {
+  width: 100%; /* Make the select element fill the entire width */
+  padding: 10px 15px;
+  border: 2px solid #eaeaea;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filter-select:focus {
+  border-color: #007bff;
+}
+
+.filter-select option {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.filter-select:hover {
+  border-color: #007bff;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .filter-group {
+    flex-basis: 100%; /* Each filter group takes up full width on smaller screens */
+  }
+}
